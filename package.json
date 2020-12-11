@@ -10,5 +10,13 @@
     "NONE"
   ],
   "author": "CRISPEN GARI",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrispenGari/js-random-numbers-npm-package.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CrispenGari/js-random-numbers-npm-package/issues"
+  },
+  "homepage": "https://github.com/CrispenGari/js-random-numbers-npm-package#readme"
 }

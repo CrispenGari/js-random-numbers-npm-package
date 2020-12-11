@@ -1,60 +1,71 @@
 ### What is this?
 
-### random-question
+### js-random-numbers
 
 This is package that generates random numbers for both unsigned and signed `integers` and `float` numbers
 
 ## Installation
 
 ```sh
-$ npm install random-question
+$ npm install js-random-numbers
 ```
 
 ## Usage
 
-## Import `random-question`
+## Import `js-random-numbers`
 
 ```sh
-const randomQuestion = require("random-question");
+const randomNumber = require("js-random-numbers");
 ```
 
 ## OR
 
 ```sh
-import randomQuestion from "random-question";
+import randomNumber from "js-random-numbers";
 ```
 
 ## Then
 
-```
-console.log(randomQuestion.randomQuestion());
+For integer values
 
+```
+console.log(randomNumber.randomInt(5, 20, 20));
+console.log(randomNumber.randomInt(5, 20));
 ```
 
 The above will output the following:
 
 ```
-What’s the weirdest conversation you’ve eavesdropped on?
-```
-
-## OR
-
-```
-console.log(randomQuestion.randomQuestion(5))
-
-```
-
-The above will output an array of questions for example:
-
-```
-// Depending on the number of question that you passed to the function randomQuestion
-
 [
-  ' What’s something that I don’t know?',
-  ' What’s the most rage inducing game you’ve ever played?',
-  ' What food is delicious but a pain to eat?',
-  ' What’s fine in small numbers but terrifying in large numbers?',
-  ' What was the most amazing physical feat you’ve managed to pull off?'
+   6,  0, 16, 12, 18,  6,  4,
+  13,  3,  1, 12,  1, 15, 16,
+   6, 16,  9,  8,  1, 11
 ]
+4
+```
+
+## For Float values
 
 ```
+console.log(randomNumber.randomFloat(0, 19, 5));
+console.log(randomNumber.randomFloat(0, 19));
+```
+
+The above will output the following:
+
+```
+[
+  21.57894736842105,
+  35.63157894736842,
+  43.73684210526316,
+  18.473684210526315,
+  49.78947368421053
+]
+1.1578947368421053
+```
+
+## Package Information
+
+- randomises integers and float
+- randomises an array of integers and float values
+- randomises integers and float that are negative
